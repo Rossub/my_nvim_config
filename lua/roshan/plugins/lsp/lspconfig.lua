@@ -74,6 +74,14 @@ return {
 		lspconfig["html"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			filetypes = "html",
+			settings = {
+				html = {
+					formatting = {
+						provider = "prettier",
+					},
+				},
+			},
 		})
 
 		-- configure typescript server with plugin
@@ -86,6 +94,8 @@ return {
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			filetypes = "html",
+			"css",
 		})
 
 		-- configure tailwindcss server
