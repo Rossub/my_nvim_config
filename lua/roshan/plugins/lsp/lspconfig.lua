@@ -94,15 +94,14 @@ return {
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-			filetypes = "html",
-			"css",
+			filetypes = { "html", "css" },
 		})
 
 		-- configure tailwindcss server
-		lspconfig["tailwindcss"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
+		-- lspconfig["tailwindcss"].setup({
+		-- 	capabilities = capabilities,
+		-- 	on_attach = on_attach,
+		-- })
 
 		-- configure python server
 		lspconfig["pyright"].setup({
