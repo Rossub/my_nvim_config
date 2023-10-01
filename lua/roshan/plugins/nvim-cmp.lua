@@ -23,7 +23,7 @@ return {
 
 		cmp.setup({
 			view = {
-				entries = { name = "custom", selection_order = "near_cursor" },
+				-- entries = { name = "custom", selection_order = "near_cursor" },
 				-- entries = { name = "wildmenu", separator = "|" },
 				-- entries = { name = "native" },
 			},
@@ -58,6 +58,14 @@ return {
 				format = lspkind.cmp_format({
 					maxwidth = 50,
 					ellipsis_char = "...",
+					mode = "symbol", -- show only symbol annotations
+
+					-- The function below will be called before any actual modifications from lspkind
+					-- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
+					-- before = function(entry, vim_item)
+					-- 	...
+					-- 	return vim_item
+					-- end,
 				}),
 			},
 		})

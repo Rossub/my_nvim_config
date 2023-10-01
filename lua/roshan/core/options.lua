@@ -36,3 +36,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-") --makes "-" a keyword
+
+vim.cmd([[vnoremap < <gv]])
+vim.cmd([[vnoremap > >gv]])

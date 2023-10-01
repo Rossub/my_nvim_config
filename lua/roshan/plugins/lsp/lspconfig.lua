@@ -104,18 +104,18 @@ return {
 		-- })
 
 		-- configure python server
-		lspconfig["pyright"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = { "python" },
-			settings = {
-				python = {
-					formatting = {
-						provider = "black",
-					},
-				},
-			},
-		})
+		-- lspconfig["pyright"].setup({
+		-- 	capabilities = capabilities,
+		-- 	on_attach = on_attach,
+		-- 	filetypes = { "python" },
+		-- 	settings = {
+		-- 		python = {
+		-- 			formatting = {
+		-- 				provider = "black",
+		-- 			},
+		-- 		},
+		-- 	},
+		-- })
 
 		-- lspconfig["black"].setup({
 		-- 	capabilities = capabilities,
@@ -139,6 +139,14 @@ return {
 
 		lspconfig["pylsp"].setup({
 			capabilities = capabilities,
+			filetypes = { "python" },
+			settings = {
+				python = {
+					formatting = {
+						provider = "black",
+					},
+				},
+			},
 			on_attach = on_attach,
 		})
 
