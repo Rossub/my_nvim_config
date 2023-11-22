@@ -8,7 +8,7 @@ return {
 
 			dracula.setup()
 
-			-- vim.cmd.colorscheme("dracula")
+			vim.cmd.colorscheme("dracula")
 		end,
 	},
 
@@ -72,7 +72,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		opts = {
-			style = "moon",
+			style = "night", -- moon storm day night
 		},
 		config = function()
 			require("tokyonight").setup({
@@ -86,7 +86,7 @@ return {
 		priority = 1000,
 		config = function()
 			require("everforest").setup({
-				vim.cmd.colorscheme("everforest"),
+				-- vim.cmd.colorscheme("everforest"),
 			})
 		end,
 	},

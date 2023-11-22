@@ -8,8 +8,8 @@ return {
 
 		indent.setup({
 			-- symbol = "▏",
-			-- symbol = "│",
-			symbol = "╎",
+			symbol = "│",
+			-- symbol = "╎",
 			options = { try_as_border = true },
 		})
 	end,

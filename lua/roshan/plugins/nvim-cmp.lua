@@ -22,11 +22,11 @@ return {
 		vim.opt.completeopt = "menu,menuone,noselect"
 
 		cmp.setup({
-			view = {
-				-- entries = { name = "custom", selection_order = "near_cursor" },
-				-- entries = { name = "wildmenu", separator = "|" },
-				-- entries = { name = "native" },
-			},
+			-- view = {
+			-- entries = { name = "custom", selection_order = "near_cursor" },
+			-- entries = { name = "wildmenu", separator = "|" },
+			-- entries = { name = "native" },
+			-- },
 			snippet = {
 				expand = function(args)
 					luasnip.lsp_expand(args.body)

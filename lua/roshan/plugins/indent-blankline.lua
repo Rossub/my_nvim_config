@@ -3,7 +3,8 @@ return {
 	main = "ibl",
 	event = { "BufReadPost", "BufNewFile" },
 	opts = {
-		indent = { char = "╎" },
+		-- indent = { char = "╎" },
+		indent = { char = "│" },
 		scope = { enabled = false },
 		exclude = {
 			filetypes = {

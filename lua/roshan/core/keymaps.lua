@@ -49,3 +49,6 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true }) -- toggle
 
 -- Lazy
 keymap.set("n", "<leader>l", ":Lazy<CR>", { silent = true }) -- toggle file explorer
+
+--mason
+keymap.set("n", "<leader>m", ":Mason<CR>", { silent = true }) -- toggle file explorer
