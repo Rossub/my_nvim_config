@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"jayp0521/mason-null-ls.nvim",
+		"nvimtools/none-ls.nvim",
 	},
 	config = function()
 		-- import mason
@@ -36,6 +37,7 @@ return {
 				"pylsp",
 				"bashls",
 				"clangd",
+				"jdtls",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -48,6 +50,7 @@ return {
 				"stylua", -- lua formatter
 				"eslint_d", -- ts/js linter
 				"black",
+				"clang-format",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true,

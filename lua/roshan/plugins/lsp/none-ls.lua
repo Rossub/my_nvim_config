@@ -1,5 +1,5 @@
 return {
-	"jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
+	"nvimtools/none-ls.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		-- import null-ls plugin
@@ -26,7 +26,9 @@ return {
 				formatting.black,
 				formatting.prettier,
 				formatting.beautysh,
+				formatting.clang_format,
 			},
+
 			-- configure format on save
 			on_attach = function(current_client, bufnr)
 				if current_client.supports_method("textDocument/formatting") then
